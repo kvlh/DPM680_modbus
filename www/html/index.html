@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<style>
+#lista {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align center;
+}
+
+#lista td, #lista th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align center;
+}
+#lista {
+    border-collapse: collapse;
+    width: 30%;
+    text-algin: center;
+}
+#lista tr:nth-child(even){background-color: #f2f2f2;}
+
+#lista tr:ver {background-color: #ddd;}
+
+#lista td{
+text-algin: center;
+}
+#lista th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+input[type=submit] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+</style>
+</head>
+
+
+
+<body>
+
+<form action="index.php" method="post" align="center">
+<table id="lista" align="center">
+
+<tr>
+<th></th>
+<th>Data</th>
+<th>Godzina</th>
+
+<tr>
+<td>Początek pomiaru:</td>
+<td><input type="date" name="d1"></td>
+<td><input type="time" name="t1" value="12:00"></td>
+</tr>
+
+<tr>
+<td>Koniec pomiaru:</td>
+<td><input type="date" name="d2" ></td>
+<td><input type="time" name="t2" value="12:00"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="submit" align="center" value="Sprawdź" /></td>
+<td></td>
+</tr>
+
+</form>
+
+
+    <div style="position: absolute; bottom: 5px">
+	<a href="pomiary.php">p</a>
+
+    </div>
+
+</body>
+
+</html>
+
